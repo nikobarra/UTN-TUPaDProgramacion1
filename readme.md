@@ -135,7 +135,7 @@ Programación estructurada
 
 🚀 Cómo ejecutar
 Clonar el repositorio:
-git clone https://github.com/usuario/repositorio.git
+git clone https://github.com/nikobarra/UTN-TUPaDProgramacion1
 Ejecutar el archivo deseado:
 python ejercicio1.py
 📎 Notas
