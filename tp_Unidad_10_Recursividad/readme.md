@@ -1,8 +1,43 @@
-Ej 1 – Factorial: caso base n == 0 o 1 devuelve 1; caso recursivo multiplica n \* factorial(n-1).
-Ej 2 – Fibonacci: casos base para posición 0 y 1; el resto suma los dos anteriores F(n-1) + F(n-2).
-Ej 3 – Potencia: caso base exponente 0 devuelve 1; caso recursivo multiplica base \* potencia(base, exp-1).
-Ej 4 – Decimal a binario: caso base cuando n es 0 o 1; caso recursivo llama con n // 2 y concatena el resto n % 2 al final.
-Ej 5 – Palíndromo: caso base cadena de 0 o 1 letras; compara primera y última letra, y llama recursivamente con el interior palabra[1:-1].
-Ej 6 – Suma de dígitos: caso base número menor a 10; extrae el último dígito con % 10 y llama con // 10.
-Ej 7 – Pirámide de bloques: caso base n == 1; caso recursivo suma n + contar_bloques(n-1). Es esencialmente la suma triangular.
-Ej 8 – Contar dígito: caso base número de un solo dígito; verifica el último dígito con % 10 y recurre con // 10.
+# TP Unidad 10: Recursividad 🌀
+
+Este módulo contiene la resolución de una serie de ejercicios prácticos enfocados en el aprendizaje y aplicación del paradigma de **Recursividad** en Python.
+
+La recursividad es una técnica donde una función se llama a sí misma para resolver subproblemas más pequeños del problema original, hasta alcanzar un **caso base**.
+
+---
+
+## 🧠 Conceptos Aplicados
+- **Caso Base:** La condición que detiene la recursión.
+- **Caso Recursivo:** La llamada a la función con un argumento reducido.
+- **Pila de Llamadas (Stack):** Gestión de la memoria durante la ejecución.
+
+---
+
+## 📋 Lista de Ejercicios
+
+A continuación se detallan los algoritmos implementados:
+
+| Ejercicio | Título | Lógica Recursiva |
+| :--- | :--- | :--- |
+| **01** | **Factorial** | `n * factorial(n-1)`. Caso base: `n` es 0 o 1. |
+| **02** | **Fibonacci** | `F(n-1) + F(n-2)`. Casos base: posiciones 0 y 1. |
+| **03** | **Potencia** | `base * potencia(base, exp-1)`. Caso base: `exp == 0`. |
+| **04** | **Decimal a Binario** | `n // 2` + resto `n % 2`. Caso base: `n < 2`. |
+| **05** | **Palíndromo** | Compara extremos y recurre con `palabra[1:-1]`. |
+| **06** | **Suma de Dígitos** | `n % 10 + suma(n // 10)`. Caso base: `n < 10`. |
+| **07** | **Pirámide de Bloques** | `n + contar(n-1)` (Suma triangular). Caso base: `n == 1`. |
+| **08** | **Contar Dígito** | Verifica `n % 10` y recurre con `n // 10`. |
+
+---
+
+## 🚀 Ejecución
+
+Para probar cualquiera de los ejercicios, ejecuta el archivo correspondiente desde la terminal:
+
+```bash
+# Ejemplo para ejecutar el ejercicio de Factorial
+python Ejercicio_01.py
+```
+
+---
+*Este trabajo práctico forma parte de la formación en Programación 1 - UTN TUPAD.*
